@@ -7,7 +7,6 @@ Ekart is a web application built using React that simulates an e-commerce platfo
 ## Features
 
 - **Product Browsing**: Users can browse through a variety of products.
-- **User Account Management**: Users can create accounts, manage their profiles, and view their purchase history.
 - **Shopping Cart**: Users can add products to a shopping cart and proceed to checkout.
 - **Responsive Design**: The platform is designed to be responsive, ensuring a great user experience on both desktop and mobile devices.
 
