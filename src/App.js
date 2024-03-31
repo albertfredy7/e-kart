@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationBar from './Components/NavigationBar';
+import Products from './Pages/Products';
+import { Routes,Route } from 'react-router-dom';
+import Users from './Pages/Users';
+import Details from './Pages/Details';
+import CategoryProducts from './Pages/CategoryProducts';
+import Cart from './Pages/Cart';
+import Checkout from './Pages/Checkout';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      
+      
+      <NavigationBar/>
+      <Routes>
+        <Route path='/' element={<Products />} />
+        <Route path='/products/:id' element={<Details />} />
+        <Route path='/product/:category' element={<CategoryProducts />} />
+        <Route path='/users' element={ <Users/> } />
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/checkout' element={<Checkout/>} />
+      </Routes>
+    </>
   );
 }
 
