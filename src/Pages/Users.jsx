@@ -21,13 +21,13 @@ function Users() {
   return (
     <div className='container'>
       <h1>Users</h1>
-      <div className='d-flex flex-lg-row flex-sm-column p-5'>
+      <div className='d-flex flex-lg-wrap flex-sm-column p-5'>
         {
           users.length > 0 ? (
             users.map(user => (
               <Card key={user.id} className='p-5 m-3'>
                 <div className='d-flex flex-column justify-content-center align-items-center'>
-                  <div className='d-flex justify-content-center'><img src={user.avatar} className='rounded-circle' alt="" /></div>
+                  <div className='d-flex justify-content-center'><img src={user.avatar} width={100} height={100} className='rounded-circle' alt="" /></div>
                   <h1>{user.name}</h1>
                   <h4>{user.email}</h4>
                 </div>
